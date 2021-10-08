@@ -13,5 +13,12 @@ class User{
         $this->userId = $userId;
         $this->balance = $balance;
     }
-
+/*    public function safeUser(int $id, int $userId, int $balance)
+    {
+        $arrayUser = [$id => $id, $userId => $userId, $balance => $balance];
+        $json = json_encode($arrayUser);
+        var_dump($arrayUser);
+    }
+*/
 }
+
