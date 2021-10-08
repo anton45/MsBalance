@@ -2,10 +2,10 @@
 
 require __DIR__ . '/../vendor/autoload.php';
 
-use MsBalance\User;
+use MsBalance\Wallet;
 
 function getUser(int $id, int $userId, int $balance){
-    $user = new User($id, $userId, $balance);
+    $user = new Wallet($id, $userId, $balance);
     $file = serialize($user);
     $file = json_encode($file);
     print_r($file);

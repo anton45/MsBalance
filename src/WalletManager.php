@@ -9,9 +9,10 @@ class WalletManager
     private int $money;
 
 
-    public function safeUser(array $json)
+    public function safetoFile(Wallet $Wallet)
     {
-
+        $file = file_get_contents(file.txt);
+        var_dump($file);
     }
     /*    public function balance(int $userId, int $money): bool
        {

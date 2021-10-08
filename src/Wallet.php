@@ -2,7 +2,7 @@
 
 namespace MsBalance;
 
-class User{
+class Wallet{
     private int $id;
     private int $userId;
     private int $balance;
