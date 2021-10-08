@@ -6,6 +6,8 @@ use MsBalance\User;
 
 function getUser(int $id, int $userId, int $balance){
     $user = new User($id, $userId, $balance);
-    print_r($user);
+    $file = serialize($user);
+    $file = json_encode($file);
+    print_r($file);
 }
 getUser(1, 1, 15);
