@@ -9,10 +9,10 @@ class WalletManager
     private int $money;
 
 
-    public function safetoFile(Wallet $Wallet)
+    public function safetoFile()
     {
         $file = file_get_contents(file.txt);
-        var_dump($file);
+        print_r($file);
     }
     /*    public function balance(int $userId, int $money): bool
        {
