@@ -3,18 +3,17 @@
 namespace MsBalance;
 
 class User{
-    private int $idUser;
-    private int $accNumber;
+    private int $id;
+    private int $userid;
     private int $balance;
-    private string $name;
 
-    public function __construct($idUser, $accNumber, $balance, $name)
+
+    public function __construct(int $id, int $userid, int $balance)
     {
 
-        $this->idUser = $idUser;
-        $this->accNumber = $accNumber;
+        $this->id = $id;
+        $this->userid = $userid;
         $this->balance = $balance;
-        $this->name = $name;
     }
 
 }

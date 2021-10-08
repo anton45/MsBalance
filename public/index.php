@@ -4,8 +4,8 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use MsBalance\User;
 
-function getUser(int $idUser, int $accNumber, int $balance, string $name){
-    $user = new User($idUser, $accNumber, $balance, $name);
+function getUser(int $id, int $userid, int $balance){
+    $user = new User($id, $userid, $balance);
     print_r($user);
 }
-getUser(1, 1, 15, 'Anton');
+getUser(1, 1, 15);
