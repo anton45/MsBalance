@@ -7,9 +7,8 @@ use MsBalance\WalletManager;
 
 function getUser(int $id, int $userId, int $balance){
     $user = new Wallet($id, $userId, $balance);
-    $serializeUser = serialize($user);
-    $writeTofile = file_put_contents('./file.txt', $serializeUser);
-    print_r($writeTofile);
+    $manager = new WalletManager();
+    print_r($manager);
 }
 /*
 function openFile(){

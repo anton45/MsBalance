@@ -11,8 +11,9 @@ class WalletManager
 
     public function safetoFile(Wallet $Wallet)
     {
-        $file = file_get_contents(file.txt);
-        $this->file = $file;
+        $serializeUser = serialize($Wallet);
+        $writeTofile = file_put_contents('./file.txt', $serializeUser);
+        return $writeTofile;
     }
     /*    public function balance(int $userId, int $money): bool
        {
