@@ -7,8 +7,8 @@ use MsBalance\WalletManager;
 
 function getUser(int $id, int $userId, int $balance){
     $user = new Wallet($id, $userId, $balance);
-    $manager = new WalletManager();
-    print_r($manager);
+    $resultWallet = $user->safetoFile($id, $userId, $balance);
+    print_r($resultWallet)
 }
 /*
 function openFile(){
