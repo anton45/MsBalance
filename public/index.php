@@ -7,8 +7,9 @@ use MsBalance\WalletManager;
 
 function getUser(int $id, int $userId, int $balance){
     $user = new Wallet($id, $userId, $balance);
-    $resultWallet = $user->safetoFile($id, $userId, $balance);
-    print_r($resultWallet)
+    $resultserialize = $user->serialize($id, $userId, $balance);
+    $resultsafetoFile = $user->safetoFile($resultserialize);
+    print_r($resultserialize);
 }
 /*
 function openFile(){
@@ -24,4 +25,4 @@ function openFile($file){
 }
 openFile($file);
 */
-getUser(1, 1, 15);
+getUser(20, 1, 66);
