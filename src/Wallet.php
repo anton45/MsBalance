@@ -7,7 +7,6 @@ class Wallet{
     private int $userId;
     private int $balance;
 
-
     public function __construct(int $id, int $userId, int $balance)
     {
         $this->id = $id;
@@ -27,6 +26,11 @@ class Wallet{
         }
         return $stingarrayuserWallet;
     }
+    public function openFile(string $fileRoute) {
+        $getFile = file_put_contents($fileRoute);
+
+    }
+
 /*    public function safeUser(int $id, int $userId, int $balance)
     {
         $arrayUser = [$id => $id, $userId => $userId, $balance => $balance];

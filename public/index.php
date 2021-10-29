@@ -5,7 +5,9 @@ require __DIR__ . '/../vendor/autoload.php';
 use MsBalance\Wallet;
 use MsBalance\WalletManager;
 
-function getUser(int $id, int $userId, int $balance){
+
+
+/*function getUser(int $id, int $userId, int $balance){
     $user = new Wallet($id, $userId, $balance);
     $resultserialize = $user->serialize($id, $userId, $balance);
     $resultsafetoFile = $user->safetoFile($resultserialize);
